@@ -1,0 +1,48 @@
+Difference between Browser JS(console) v Nodejs
+
+1)
+Brower JS :
+Can interact with the DOM, or other Web Platform APIs like Cookies.
+Node Js: 
+Those do not exist in  Node.js 
+
+2)
+Brower JS :
+Browsers have the document, window 
+Node Js: 
+Doesn't have the document, window and all the other objects that are provided by the browser. 
+
+3)
+Brower JS :
+Doesn't have all the nice APIs that Node.js provides through its modules, like the filesystem access functionality.
+Node Js: 
+Node.js provides nice APIs through its modules
+
+4)
+Brower JS :
+Cannot control the environment
+Node Js: 
+Node.js you control the environment. Where to deploy , which version of Node.js you will run the application.
+
+5)
+Brower JS :
+Browsers are slow to upgrade, sometimes on the web you are stuck with using older JavaScript / ECMAScript releases.
+Node Js: 
+Can write all the modern ES6-7-8-9 JavaScript that your Node.js version supports.
+
+
+Execute the below code and write your description in txt file
+
+typeof(1) -------> Number
+typeof(1.1) ------->Number
+typeof('1.1') ------->String
+typeof(true) ------->Boolean
+typeof(null) ------->object
+typeof(undefined) ------->undefined
+typeof([]) ------->object
+typeof({}) ------->object
+typeof(NaN) ------->Number
+
+
+What is prototype
+Every object we create or define will inherit few properties from Object. Object is Javascript inbuilt keyword which has a property called prototype.

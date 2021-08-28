@@ -91,6 +91,19 @@ console.log(uniques);
 [1,2,3, 4, 5,6]
 
 
+//Rotate an array by k times
+  (function(num,k){
+    for (let i = 0; i < k; i++) {
+        num.unshift(num.pop());
+    }
+  
+    console.log(num);
+}([1,2,3,4,5,6],3));
+
+//output:
+[ 4, 5, 6, 1, 2, 3 ] 
+
+
 //ARROW FUNCTIONS:
 
 // Print odd numbers in an array

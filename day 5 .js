@@ -100,7 +100,8 @@ console.log(uniques);
     console.log(num);
 }([1,2,3,4,5,6],3));
 
-
+//output:
+[ 4, 5, 6, 1, 2, 3 ] 
 
 
 //ARROW FUNCTIONS:

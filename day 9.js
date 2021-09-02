@@ -55,6 +55,17 @@ xhr.onload=function(){
 
 // c)Print the following details name, capital, flag using forEach function
 
+var xhr=new XMLHttpRequest();
+xhr.open('GET','https://restcountries.eu/rest/v2/all',true);
+xhr.send();
+xhr.onload=function(){
+    var data=JSON.parse(this.response);
+    data.forEach((element,i) => {
+        console.log({"name":data[i].name,"capital":data[i].capital,"flag":data[i].flag})   
+    });
+}
+
+
 // d)Print the total population of countries using reduce function
 var xhr=new XMLHttpRequest();
 xhr.open('GET','https://restcountries.eu/rest/v2/all',true);
@@ -70,3 +81,21 @@ xhr.onload=function(){
 //7349137231
 
 // e)Print the country which uses US Dollars as currency.
+
+
+var xhr=new XMLHttpRequest();
+xhr.open('GET','https://restcountries.eu/rest/v2/all',true);
+xhr.send();
+xhr.onload=function(){
+    var data=JSON.parse(this.response);
+    var result=data.filter((element)=>element.currencies[0].code==="USD")
+                   .map(elem=>elem.name);
+    console.log(result);
+}
+
+//output
+
+// ['American Samoa', 'Bonaire, Sint Eustatius and Saba', 'British Indian Ocean Territory',
+//  'United States Minor Outlying Islands', 'Virgin Islands (U.S.)', 'Ecuador', 'El Salvador', 
+//  'Guam', 'Marshall Islands', 'Northern Mariana Islands', 'Puerto Rico', 'Timor-Leste', 
+//  'Turks and Caicos Islands', 'United States of America']

@@ -60,8 +60,10 @@ xhr.open('GET','https://restcountries.eu/rest/v2/all',true);
 xhr.send();
 xhr.onload=function(){
     var data=JSON.parse(this.response);
-    var result=data.filter((element)=>element.currencies[0].code==="USD")
-                   .map(elem=>elem.name);
-    console.log(result);
+    var usd_countries=data.filter(element=>{
+        for(let i of element.currencies)
+            if(i.code ==='USD') return true;})
+        .map((element)=>element.name);
+    console.log(usd_countries);
 }
 

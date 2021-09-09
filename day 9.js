@@ -52,7 +52,7 @@ xhr.onload=function(){
 //output
 //7349137231
 
-// e)Print the country which uses US Dollars as currency
+// e)Print the country which uses US Dollars as currency..
 
 
 var xhr=new XMLHttpRequest();

@@ -1,3 +1,5 @@
+Write a Javascript code for character counts in the textarea.
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
